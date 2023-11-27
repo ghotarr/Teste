@@ -1,0 +1,112 @@
+public class Node {
+
+	private int key; //nó para controlar o indice da arvore	
+	private node left+; //ponteiro para a esquerda
+	private node right+; //ponteiro para a direita
+
+//getters and setters
+
+}
+	public class bs+{
+		private node root;
+		public void add(int k, object v)
+		  this.root=this.add(ttas.root,k,v);
+
+
+private Node add(Node subroot, int k, object v){
+	if (subroot == null) { // verificando se o nó é nulo
+	    Node n = new Node(k,v);
+	    return n;
+	}else {
+	    if( k< subroot.getkey())}
+	    subroot.setleft(this.add(subroot.getleft(),k,u));
+	}else if(k>subroot.getkey()){
+	    subroot.setroght(this.add(subroot.getright(),k,v));
+	}
+	return subroot;
+
+
+
+
+// metodo de busca
+
+public object get(int k){
+	return this.get(this.root,k);
+}
+
+
+private object get(Node sub, int k){
+	if(sub!==null{
+	   if(k<sub.getkey()){
+		return this.get(sub.getleft(),k);
+	}else if(k>sub.getkey()){
+	   return this.get(sub.getright(),k);
+	}else {
+	   return sub.getvalue();
+	}
+}
+return null;
+
+
+mostrar os percursos
+pre - V E D
+in -  E V D
+post - E D V 
+
+
+
+
+
+
+// toda vez que for manipular uma chamada recursiva eu vou usar uma pilha do sistema operacional, ou um fila.
+
+
+
+
+
+primeira versao onde só é printado na tela o percurso pre ordem // 
+
+public void inOrder(){
+   this.inOrder(this.root);
+}
+private void inOrder(Node sub){    //preciso verificar se esse cara é nulo para eu fazer a chamada do inOrder
+   if(sub != null){
+      this.inOrder(sub.getleft());
+      system.out.println(sub.getkey());
+      this.inOrder(sub.getright());
+}
+
+// criando uma pilha
+
+
+
+private Queue lulOrder(Node sub, Queue Q){
+	if ( sub != null){
+	   Q.ENQUEUE(sub)
+	}
+	while(!Q.isEmpty()){
+	  system.out.println(Q.dequeue().getkey());
+	  if (sub.getleft()!= null){
+	  Q.enqueue(sub.getleft());
+	  }
+	  if(sub.getright() != null){
+	     Q.enqueue(sub.getright());
+	}
+}
+
+
+stackeroverflow
+
+
+corman - teoria dos grafos
+intercalar teoria dos grafos em matematica e computação 
+busca em largura e profundidade 
+random forest
+	
+
+alguns dos  alg de grafo sao parecidos com os alg de arvore
+
+verificar lista aberta e lista fechada para demarcar os caminhos
+
+
+
